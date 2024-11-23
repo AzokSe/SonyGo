@@ -1,0 +1,130 @@
+main {
+    color: #2f353d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main header{
+    margin: 250px 0px;
+    width: 90%;
+    font-size: 2em;
+    display: flex;
+}
+
+main header .photo {
+    height: 400px;
+    padding-left: 100px;
+}
+
+main .btnNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 200px;
+    margin-bottom: 150px;
+}
+
+main .btnNav a {
+    padding: 20px 50px;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 1s ease;
+    animation: bounce 5s infinite;
+}
+
+main .btnNav a:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+main .btnNav a:nth-child(1) {
+    background: #007dfe;
+}
+
+main .btnNav a:nth-child(2) {
+    background: black;
+}
+
+main .ensembleCarte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 100px;
+    margin: 150px 0;
+}
+
+main .ensembleCarte section {
+    background-color: #f2f5f9;
+    color: #2f353d;
+    padding: 75px;
+    font-size: 1.3em;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+}
+
+main .ensembleCarte section h2 {
+    color: #007dfe;
+    font-size: 1.5em;
+    min-width: 40%;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: black;
+    height: 500px;
+    padding: 50px 200px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    font-size: 1.15em;
+}
+
+footer li {
+    list-style: none;
+    transition: 0.2s ease-in-out;
+}
+
+footer li:hover {
+    color: gray;
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbarre {
+        padding: 0 100px;
+    }
+
+    main header{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main header img{
+        padding: 0;
+        width: auto;
+        height: 500px;
+    }
+
+    main .btnNav {
+        flex-direction: column;
+        padding: 50px;
+    }
+    main .btnNav a {
+        margin: 20px;
+    }
+
+    main .ensembleCarte section .contenu {
+        flex-direction: column;
+    }
+}

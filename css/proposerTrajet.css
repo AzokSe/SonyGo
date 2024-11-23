@@ -1,0 +1,121 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contenu {
+    background-color: #f2f5f9;
+    height: 700px;
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    margin: 60px 20px 20px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+main .contenu .gauche {
+    background-color: #2f353d;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 60px 30px;
+    position: relative;
+}
+
+main .contenu .gauche .inputStyle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+main .contenu .gauche .inputStyle label {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #f2f5f9;
+    margin-bottom: 5px;
+}
+
+main .contenu .gauche .inputStyle input::placeholder{
+    color: #2f353d;
+    opacity: 25%;
+}
+
+main .contenu .gauche .inputStyle input {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #f2f5f9;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f2f5f9;
+    font-weight: bold;
+    font-size: 1.25em;
+    display: block;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+main .contenu .gauche button {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em;
+    margin-top: 80px;
+    background-color: #f2f5f9;
+    color: #2f353d;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+main .contenu .gauche input:focus {
+    border-color: #007dfe;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+main .contenu .gauche button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+main .contenu .gauche a {
+    position: absolute;
+    bottom: 15px;
+    color: #f2f5f9;
+    font-size: larger;
+}
+
+main .contenu .droite {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contenu .droite img {
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    main .contenu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main .contenu .gauche {
+        width: 100%;
+    }
+
+    main .contenu .droite img {
+        margin: 20px 0;
+    }
+}

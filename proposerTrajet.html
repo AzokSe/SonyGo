@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonyGo</title>
+    <link rel="stylesheet" href="css/navBarre.css">
+    <link rel="stylesheet" href="css/proposerTrajet.css">
+    <link rel="icon" href="img/png/logo1-removebg-preview.png">
+</head>
+<body>
+    <header class="navbarre">
+        <div class="logo">
+            <a href="index.html"><img src="img/svg/sony-logo.svg" alt="Logo SonyGo"></a>
+        </div>
+        <div class="lien">
+            <a href="connexion.html"><img src="img/svg/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Profil"></a>
+            <a href="Favorie"><img src="img/svg/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Favorie"></a>
+            <a href="Recherche"><img src="img/svg/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Recherche"></a>
+            <a href="Menu"><img src="img/svg/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu"></a>
+        </div>
+    </header>
+        <main>
+            <div class="contenu">
+                <div class="gauche">
+                    <form method="get">
+                        <div class="inputStyle">
+                            <label for="depart">Départ <img src="img/svg/distance_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+                            <input name="depart" id="depart" type="text" placeholder="D’où partez-vous ?">
+                        </div>
+                        <div class="inputStyle">
+                            <label for="destination">Destination <img src="img/svg/flag_2_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+                            <input name="destination" id="destination" type="text" placeholder="Où allez-vous ?">
+                        </div>
+                        <div class="inputStyle">
+                            <label for="siege">Nombre de sièges</label>
+                            <input type="number" id="siege" name="siege" min="1" max="7" value="1">
+                        </div>
+                    </form>
+                    <button>Publier le trajet</button>
+                    <a href="">Assistance</a>
+                </div>
+                <div class="droite">
+                    <img src="img/png/exempleTrajet.png" alt="trajet ">
+                </div>
+            </div>
+        </main>
+</body>
