@@ -14,7 +14,7 @@ main header{
 }
 
 main header .photo {
-    height: 400px;
+    max-height: 400px;
     padding-left: 100px;
 }
 
@@ -79,7 +79,7 @@ main .ensembleCarte section h2 {
 
 footer {
     background-color: black;
-    height: 500px;
+    height: auto;
     padding: 50px 200px;
     color: aliceblue;
     display: flex;
@@ -110,10 +110,10 @@ footer li:hover {
 
     }
 
-    main header img{
-        padding: 0;
-        width: auto;
-        height: 500px;
+    main header .photo {
+        padding-left: 0px;
+        max-width: 100%;
+        height: auto;
     }
 
     main .btnNav {
@@ -125,6 +125,10 @@ footer li:hover {
     }
 
     main .ensembleCarte section .contenu {
+        flex-direction: column;
+    }
+
+    footer {
         flex-direction: column;
     }
 }
